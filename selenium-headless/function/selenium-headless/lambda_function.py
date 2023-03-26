@@ -2,11 +2,11 @@ from selenium import webdriver
 
 def lambda_handler(event, context, is_lambda=True):
 
-    URL = "https://news.yahoo.co.jp/"
+    URL = "https://www.google.com/"
 
     options = webdriver.ChromeOptions()
 
-    # Lambdaから呼び出した場合
+    # Executed by Lambda
     if is_lambda:
         options.add_argument("--headless")
         options.add_argument("--disable-gpu")
@@ -20,7 +20,7 @@ def lambda_handler(event, context, is_lambda=True):
 
         browser = webdriver.Chrome("/opt/python/bin/chromedriver", options=options)
 
-    # Lambda以外から呼び出した場合
+    # Executed by Local 
     else:
         from webdriver_manager.chrome import ChromeDriverManager
 
