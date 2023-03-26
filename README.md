@@ -1,6 +1,18 @@
 # About This Repository
 
-WIP...
+In order to run Selenium with Lambda, there are many things that must be prepared, so it's difficult.
+
+Here is a summary of the procedures for efficiently running Selenium programs with Lambda.
+
+## things to do
+
+- Lambda to run Selenium in Headless mode
+- IaC (Infrastructure as Code) using AWS SAM
+- Make it easy to test locally (Selenium Headful mode)
+
+# Reference
+
+https://qiita.com/K5K/items/1180f73d7e3e74493a40
 
 # How To Use 
 
